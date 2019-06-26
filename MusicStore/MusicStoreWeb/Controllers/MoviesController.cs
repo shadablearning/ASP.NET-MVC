@@ -17,7 +17,11 @@ namespace MusicStoreWeb.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() { Name="Shrek!"};
-            return View(movie);
+            //return View(movie);
+            // return Content(movie.Name);
+            //return HttpNotFound();
+            //return new EmptyResult();
+            return RedirectToAction("Index","Home",new { page=1,sortBy="Name"});
         }
     }
 }
