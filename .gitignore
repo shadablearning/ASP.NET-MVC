@@ -3,3 +3,6 @@
 ################################################################################
 
 /MusicStore/MusicStoreWeb/bin
+/MusicStore/MusicStoreWeb/obj/Debug
+/MusicStore/packages
+/MusicStore/.vs
