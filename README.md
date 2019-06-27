@@ -6,4 +6,4 @@ MVC in Action >>  Create Movie Model and Pass it to Control
 
 Action Results >>
 
-Parameter Binding 
+Parameter Binding ..>

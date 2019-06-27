@@ -43,6 +43,11 @@ namespace MusicStoreWeb.Controllers
             return Content("id=" + id);
         }
 
+        public ActionResult ByReleaseDate(int year,int month)
+        {
+            return Content(year+"/"+month);
+        }
+
         //public ActionResult Edit(int movieId)
         //{
         //    return Content("id=" + movieId);
