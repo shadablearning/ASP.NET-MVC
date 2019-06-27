@@ -13,13 +13,8 @@ namespace MusicStoreWeb
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            //Custom Route 
-            routes.MapRoute(
-                "MoviesByReleaseDate",
-                "movies/released/{year}/{month}",
-                new { controller="Movies",action="ByReleaseDate" },
-                new { year=@"\d{4}",month=@"\d{2}"}
-                );
+            //Enable Attibute Routing
+            routes.MapMvcAttributeRoutes();
 
             routes.MapRoute(
                 name: "Default",
