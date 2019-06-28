@@ -1,4 +1,5 @@
 ﻿using MusicStoreWeb.Models;
+using MusicStoreWeb.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,12 +32,24 @@ namespace MusicStoreWeb.Controllers
         {
             var movie = new Movie() { Name="Shrek!"};
 
-            
+            var customers = new List<Customer>
+            {
+                new Customer{Name="Customer 1"},
+                new Customer{Name="Customer 2"}
+            };
+
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = customers
+
+            };
+
             //var ViewResult = new ViewResult();
 
             //ViewResult.ViewData.Model
-            
-            return View(movie);
+
+            return View(viewModel);
 
         }
 

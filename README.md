@@ -12,4 +12,6 @@ Convention Based Routing >>> Custom Route
 
 Attribute Routing >>
  
-Pass Data to views >>
+Pass Data to views >> ViewBag and Viewdata.
+
+View model : is model specifcally build for view . data and rule specific to view.
