@@ -1,10 +1,8 @@
-﻿@using MusicStoreWeb.Models
-
+﻿@model MusicStoreWeb.Models.Movie
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@(((Movie)ViewData["Movie"]).Name)</h2>
-<h2>@(((Movie)ViewBag.Movie).Name)</h2>
+<h2>@Model.Name</h2>
 

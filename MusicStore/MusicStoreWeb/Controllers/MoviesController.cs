@@ -31,10 +31,12 @@ namespace MusicStoreWeb.Controllers
         {
             var movie = new Movie() { Name="Shrek!"};
 
-            ViewData["Movie"] = movie;
-            ViewBag.Movie = movie;
             
-            return View();
+            //var ViewResult = new ViewResult();
+
+            //ViewResult.ViewData.Model
+            
+            return View(movie);
 
         }
 
