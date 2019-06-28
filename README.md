@@ -15,3 +15,5 @@ Attribute Routing >>
 Pass Data to views >> ViewBag and Viewdata.
 
 View model : is model specifcally build for view . data and rule specific to view.
+
+Partial view >>> How ti render Partial View
