@@ -10,4 +10,6 @@ Parameter Binding ..>
 
 Convention Based Routing >>> Custom Route
 
-Attribute Routing
+Attribute Routing >>
+ 
+Pass Data to views >>
