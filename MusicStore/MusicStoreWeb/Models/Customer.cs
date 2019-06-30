@@ -11,5 +11,11 @@ namespace MusicStoreWeb.Models
         public int Id { get; set; }
 
         public string Name { get; set; }
+
+        public bool IsSubscribedToNewLetter { get; set; }
+
+        public MembershipType MembershipType { get; set; }
+
+        public byte MembershipTypeId { get; set; }
     }
 }
