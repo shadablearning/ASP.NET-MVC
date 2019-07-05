@@ -1,0 +1,19 @@
+﻿@model IEnumerable<MusicStoreWeb.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<table>
+    <thead></thead>
+    <tbody>
+        @foreach(var customer in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(customer.Name,"Details","Customers",new { id=customer.Id},null)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
