@@ -20,5 +20,7 @@ namespace MusicStoreWeb.Models
         public MembershipType MembershipType { get; set; }
 
         public byte MembershipTypeId { get; set; }
+
+        public DateTime? Birthdate { get; set; }
     }
 }
