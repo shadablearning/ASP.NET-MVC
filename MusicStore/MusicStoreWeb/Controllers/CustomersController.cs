@@ -1,5 +1,6 @@
 ﻿using MusicStoreWeb.Models;
 using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -26,7 +27,10 @@ namespace MusicStoreWeb.Controllers
             //var customers = GetCustomers();
             //var customers = _context.Customers;//Deferred Execution
 
-            var customers = _context.Customers.ToList();//Query Run Immediately
+            //var customers = _context.Customers.ToList();//Query Run Immediately
+
+            //Eager Loading
+            var customers = _context.Customers.Include(c=>c.MembershipType).ToList();
 
             return View(customers);
         }
